@@ -1,0 +1,108 @@
+.divBoss1{
+  width: 914px;
+  border: 1px solid black;
+  margin-left: 200px;
+  position: relative;
+}
+#img1-1{
+  margin-left: 345px;
+}
+.div1{
+  width: 323px;
+  height: 220px;
+  border: 1px solid black;
+}
+#div1-1{
+  width: 150px;
+  height: 66px;
+  background: #363636;
+  float: left;
+  margin: 5px;
+}
+#span1-1{
+  position: absolute;
+  font-size: 0.8em;
+  color: white;
+}
+.div2{
+  width: 323px;
+  height: 340px;
+  border: 1px solid black;
+}
+#span1-2{
+  color: red;
+  font-size: 0.8em;
+}
+.ul1{
+  list-style: none;
+}
+#div1-3{
+  float: left;
+  margin-top: -52px;
+}
+#div1-2{
+  float: left;
+}
+#p1-4{
+  margin-left: 38px;
+}
+.div3{
+  position: absolute;
+  left: 330px;
+  top: 300px;
+  padding: 10px 0px;
+  background: black;
+  color: white;
+  padding-right: 440px;
+}
+#img1{
+  position: absolute;
+  left: 330px;
+  top: 330px;
+}
+.div5{
+  width: 580px;
+  height: 480px;
+  float: left;
+  position: absolute;
+  left: 330px;
+  top: 710px;
+}
+.div4{
+  width: 580px;
+  height: 250px;
+  border: 2px solid black;
+  position: absolute;
+  left: 330px;
+  top: 450px;
+}
+#div1-4{
+  float: left;
+  margin: 10px;
+  margin-bottom: 70px;
+  margin-left: 20px;
+}
+#span1-4{
+  color: red;
+  display: block;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+#img2{
+  float: left;
+}
+#divboss5{
+  width: 100%;
+  height: 100px;
+  background: rgb(56, 56, 56);
+  position: absolute;
+  left: 0px;
+  top: 1180px;
+  color: white;
+  text-align: center;
+}
+#divboss5 a{
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+}
