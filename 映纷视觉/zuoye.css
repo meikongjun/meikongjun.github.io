@@ -1,0 +1,107 @@
+.divBoss{
+  width: 100%;
+  position: relative;
+}
+.div1-1{
+  position: absolute;
+  top: 90px;
+  z-index: -1;
+}
+.div1-5{
+  width: 100%;
+  height: 10%;
+  background: black;
+  opacity: 0.7;
+  position: fixed;
+}
+#p1-2{
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+#img1-3{
+  width: 15%;
+  height: 35px;
+  margin-left: 42%;
+}
+#img1-1{
+  width: 95%;
+  height: 25%;
+  margin-left: 30px;
+}
+#p1-1{
+  width: 95%;
+  height: 8%;
+  margin-left: 30px;
+  font-size: 1.5em;
+  background: gray;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+.div1-2{
+  width: 95%;
+  height: 10%;
+  text-indent: 2em;
+  margin-left: 30px;
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+  line-height: 50px;
+}
+.div1-3{
+  margin-left: 29%;
+}
+#img1-2{
+  width: 5%;
+  height: 5%;
+}
+.center{
+  width: 95%;
+  margin-left: 30px;
+}
+ #img1-4{
+  width: 100%;
+  height: 21%;
+}
+#div1-4{
+  width: 30%;
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+.divbottom{
+  width: 100%;
+  height: 160px;
+  background: gray;
+  clear: both;
+}
+.left{
+  height: 160px;
+  width: 50%;
+  float: left;
+  border-right: 1px solid black;
+}
+.right{
+  width: 46%;
+  float: left;
+  margin-left: 20px;
+}
+#img1-5{
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+li{
+  list-style: none;
+  color: white;
+  margin-left: -40px;
+}
+#img1-6{
+  width: 30%;
+  height: 15%;
+}
+@media screen and (max-width:960px) {
+
+  }
+}
