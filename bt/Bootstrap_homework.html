@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <style>
+       
+		/*头部的样式设置*/
+		.header{
+			color: #f8f8f8;
+			text-align: center;
+			background-image: url(http://ww1.sinaimg.cn/mw690/005uY5V3gw1f9xivinalnj31gs0z777e.jpg);
+			background-position: center center;
+			background-size: cover;
+			padding: 50px 0;
+
+		}
+		.message{
+			padding: 20% 0;
+		}
+		.message_ul, .img_two_ul, .footer_ul{
+			list-style-type: none;
+		}
+		.message_ul li{
+			display: inline-block;
+			padding: 0 10px;
+		}
+		.response_hr{
+			width: 400px;
+		}
+		.message h1, h3{
+    		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		}
+		.message h1{
+			font-size: 5em;
+		}
+		.span_name{
+			margin-left: 4px;
+			letter-spacing: 3px;
+			font-size: 0.7em;
+			font-weight: 600;
+		}
+        /*内容的样式*/
+        .pageContent{
+        	padding-top: 50px;
+        	padding-bottom: 50px;
+        	border-bottom: solid 1px #D8D8D8;
+        }
+        .pageContent_hr{
+        	border: 1px solid lightgray;
+        	width: 50%;
+        	margin-left: 0;
+        }
+        .pageContent_one, .pageContent_three{
+
+        	background-color: #F8F8F8;
+
+        }
+        /*img_two的样式*/
+        .img_two{
+        	color: #f8f8f8;
+        	background-image: url(http://ww4.sinaimg.cn/mw690/005uY5V3gw1f9xivelcz4j31gs0nc76p.jpg);
+        	background-position: center;
+        	background-size: cover;
+        	padding: 80px 0;
+        }
+        .img_two_ul{
+        	padding: 0;
+        }
+        .img_two_ul li{
+			display: inline-block;
+			margin: 20px 10px 20px 0px;
+			
+		}
+		.img_two h2{
+			font-size: 3em;
+		}
+		.img_two_ul_li{
+
+		}
+		/*footr样式设置*/
+		.footer{
+			margin-top: 50px;
+		}
+		.footer_ul{
+			padding: 0;
+		}
+		.footer_ul li{
+			display: inline-block;
+			margin-left: 0px;
+
+		}
+		.footer_ul span{
+			margin: 0 10px;
+		}
+		.footer_ul a{
+			font-weight: bold;
+		}
+		.footer p{
+			font-weight: bold;
+			color: gray;
+			font-size: 0.6em;
+		}
+		
+
+        /*响应式布局*/
+        @media(max-width: 767px){
+        .message{
+        	padding: 10% 0;
+        }
+        .message_ul li{
+			display: block;
+			/*padding: 0 10px;*/
+			margin-bottom: 30px;
+		}
+		.response_hr{
+
+			width: 100%;
+		}
+		.message h1{
+			font-size: 3em;
+		}
+		.img_two_ul li{
+			display: block;
+			margin-top: 15px;
+
+		}
+
+        }
+        
+        
+
+    </style>
+  </head>
+  <body>
+
+    <!-- 导航条的默认样式布局 -->
+    <!-- 向上面的元素添加 role="navigation"，有助于增加可访问性。 -->
+  	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  	<!-- 容器自适应布局% -->
+  		<div class="container">
+  		   <!-- 导航条头部 -->
+  			<div class="navbar-header">
+  				<a href="#" class="navbar-brand">Start Bootstrap</a>
+  				<!-- 把button按钮写入在导航条的头部div -->
+  				<!-- 第一个data-toggle,用于告诉JS需要对按钮做什么, 第二个是data-target,指示要切换到哪一个元素 -->
+  				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavBar">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+  			</div>
+			<!-- 让导航条的内容有折叠效果 -->
+  			<div class="collapse navbar-collapse navbar-right" id="mainNavBar">
+  				<ul class="nav navbar-nav">
+  					<li><a href="#about">About</a></li>
+  					<li><a href="#Services">Services</a></li>
+  					<li><a href="#Contact">Contact</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</nav>
+        
+        <!-- 头部 -->
+        <a name="about"></a>
+        <div class="header">
+        	<div class="container">
+        		<div class="row">
+        		<!-- 适用于>1200px屏的栅格系统 -->
+        			<div class="col-lg-12">
+        				<div class="message">
+        					<h1>Bootstrap</h1>
+        					<h3>一个简单的Bootstrap模板</h3>
+        					<hr class="response_hr">
+							<ul class="message_ul">
+								<li><a href="" class="btn btn-default btn-lg"><img style="width:20px; height:20px" src="http://ww2.sinaimg.cn/mw690/005uY5V3gw1f9xivf29hhj305k05k0sk.jpg" alt=""><span class="span_name">TWITTER</span></a></li>
+								<li><a href="" class="btn btn-default btn-lg"><img style="width:20px; height:20px" src="http://ww4.sinaimg.cn/mw690/005uY5V3gw1f9xivhfirgj305k05kmx0.jpg" alt=""><span class="span_name">GITHUB</span></a></li>
+								<li><a href="" class="btn btn-default btn-lg"><img style="width:20px; height:20px" src="http://ww2.sinaimg.cn/mw690/005uY5V3gw1f9xivf29hhj305k05k0sk.jpg" alt=""><span class="span_name">THENWSTEP</span></a></li>
+							</ul>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+		<!-- page内容one -->
+		<a name="Services"></a>
+		<div class="pageContent pageContent_one">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-sm-6">
+						<hr class="pageContent_hr">
+						<div class="pageContent_one_text">
+							<h2>生活不止眼前的苟且:<br>还有以后的</h2>
+							<p style="font-size:20px; margin-top:20px">生活不止眼前的苟且<a href="#">还有远方的田野</a> 工作只是生活的一部分,所以要抽出时间享受生活. 更要懂得休息,即使你不累!</p>
+						</div>
+					</div>
+					<!-- col-lg-offset-2 向右偏移col-lg-2 -->
+					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+						<img class="img-responsive" src="http://ww4.sinaimg.cn/mw690/005uY5V3gw1f9xivj7i9fj30p00jckao.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- page内容two -->
+		<div class="pageContent pageContent_two">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-5 col-sm-6">
+						<img class="img-responsive" src="http://ww2.sinaimg.cn/mw690/005uY5V3gw1f9xivh0b8nj30p00kxnf8.jpg" alt="">
+					</div>
+
+					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+						<hr class="pageContent_hr">
+						<div class="pageContent_one_text">
+							<h2>上天给我们最公平的礼物<br>就是时间</h2>
+							<p style="font-size:20px; margin-top:20px">每个人的时间都一样,只要能够分配好,管理好,利用好<a href="#">那么生活就会越来越好!</a> 工作只是生活的一部分,所以要抽出时间享受生活. 我坚信一句话,那就是越努力,越幸运!</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- page内容three -->
+		<div class="pageContent pageContent_three">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-sm-6">
+						<hr class="pageContent_hr">
+						<div class="pageContent_one_text">
+							<h2>珍惜时间<br>远离浪费!</h2>
+							<p style="font-size:20px; margin-top:20px">才可以让生命变得更有意义!<a href="#">鸡汤说的多了</a>, 有时不是在提醒他人,<a href="">更多的是提醒自己</a>.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+						<img class="img-responsive" src="http://ww4.sinaimg.cn/mw690/005uY5V3gw1f9xjihgdyuj30p00gjk0p.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- img内容two -->
+		<a name="Contact"></a>
+		<div class="img_two">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2>Start Bootstrap:</h2>
+					</div>
+					<div class="col-lg-6">
+						<ul class="img_two_ul">
+								<li><a href="" class="btn btn-default btn-lg"><img style="width:20px; height:20px" src="http://ww2.sinaimg.cn/mw690/005uY5V3gw1f9xivf29hhj305k05k0sk.jpg" alt=""><span class="span_name">TWITTER</span></a></li>
+								<li><a href="" class="btn btn-default btn-lg"><img style="width:20px; height:20px" src="http://ww4.sinaimg.cn/mw690/005uY5V3gw1f9xivhfirgj305k05kmx0.jpg" alt=""><span class="span_name">GITHUB</span></a></li>
+								<li><a href="" class="btn btn-default btn-lg"><img style="width:20px; height:20px" src="http://ww2.sinaimg.cn/mw690/005uY5V3gw1f9xivf29hhj305k05k0sk.jpg" alt=""><span class="span_name">THENWSTEP</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- footer -->
+        <div class="footer">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-lg-12">
+        				<ul class="footer_ul">
+        					<li><a href="">Home</a><span>-</span></li>
+        					<li><a href="">About</a><span>-</span></li>
+        					<li><a href="">Services</a><span>-</span></li>
+        					<li><a href="">Contact</a></li>
+        				</ul>
+        				<p>Copyright © 课后帮 2016. All Rights Reserved</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+  </body>
+</html>
