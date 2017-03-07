@@ -1,0 +1,234 @@
+body{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+ul,li{
+	margin:0;
+	padding:0;
+    list-style: none;	
+}
+a{
+	text-decoration:none;
+	cursor:pointer;
+}
+.main{
+   width: 100%;
+   height: 100%;
+   float: left;
+   position: absolute;
+   overflow-y: auto;
+   overflow-x: hidden; 
+}
+.header{
+	display:block;
+	height:100px;
+	background:#fff;
+}
+.header .center{
+	width:1200px;
+	margin:0 auto;
+    height:100px;	
+	overflow:hidden;
+}
+.header .logo{
+	float:left;	
+}
+.header .nav{
+	float:right;
+	margin-top:50px;
+	
+}
+.header .nav li{
+	float:left;	
+	padding:0px 40px;
+	line-height:15px;
+	border-right:1px dotted #b6b6b6;	
+}
+.header .nav li.last{
+	border:0;
+}
+.header .nav li a{
+	color:#666666;
+	font-family:Microsoft YaHei;
+	font-size:19px;	
+}
+.banner{
+	width:100%;
+	text-align:center;
+    min-width: 1200px;	
+}
+.banner img{
+	width:100%;
+}
+.content .list{
+	position:relative;
+	width:100%;
+	margin-top:50px;
+}
+.content .line{
+	width:1200px;
+	margin:0 auto;
+	display:block;
+    text-align: center;		
+}
+.content .line.customer{
+	width:100%;
+}
+.content .line .qp{
+	width:100%;
+    min-width: 1200px;			
+}
+.content .line.synopsis {
+	position:relative;
+}
+.content .line.synopsis  a {
+    width:560px;
+    height:150px;
+	position:absolute;
+    display: inline-block;	
+}
+.content .line.synopsis .hn{
+	left: 20px;
+    top: 187px;
+}
+.content .line.synopsis .hnjy{
+    left: 650px;
+    top: 191px;
+}
+.content .line.synopsis .hncx{
+    left:20px;
+    top:415px;
+}
+.content .line.synopsis .hnsp{
+    left: 650px;
+    top:415px;
+}
+.content .line.call{
+	width:100%;
+}
+.content .line.join{
+	height:676px;
+	width:100%;
+	background:url(https://img.alicdn.com/imgextra/i1/281509299/TB2udIkkXXXXXcSXXXXXXXXXXXX-281509299.jpg) no-repeat center;
+}
+.content .line.join .bot{
+	display:inline-block;
+	margin-top: 200px;	
+}
+.content .line.join .bot a{
+	float:left;
+	margin:15px;
+}
+.footer{
+	height:115px;
+	width:100%;
+	background:#333333;
+	text-align:center;
+	float: left;	
+}
+.footer a{
+	color:#999999;
+	font-size:14px;
+	font-family:Microsoft YaHei;
+	margin-right:20px;
+	display:inline-block;
+	margin:30px 0 20px 0;
+}
+.footer  .code{
+	color:#999999;
+	font-size:14px;
+	font-family:Microsoft YaHei;
+}
+
+/*弹窗*/
+#mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    overflow: hidden;
+	display:none;	
+}
+.mask-bg {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.mask-bg .list {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+.mask-bg .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    z-index: 999;
+}
+.pop-up-box {
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+	z-index:1000;
+}
+.pop-up-box.pop-tc{
+	width:870px;
+	height:500px;	
+	font-family:Microsoft YaHei;	
+	display:none;
+}
+.pop-up-box .pop-head {
+    width: 100%;
+    height: 39px;
+    position: relative;
+    float: left;
+	border-bottom:1px solid #d8d8d8;
+}
+.pop-up-box .pop-head span {
+    font-size: 15px;
+    color: #3a3a3a;
+    line-height: 39px;
+    padding: 0 0 0 13px;
+    float: left;
+    font-weight: bold;
+    font-family: 微软雅黑;
+}
+.pop-up-box .pop-head a {
+    padding: 0;
+    top: 9px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    background: url(https://img.alicdn.com/imgextra/i2/199138789/TB26t_JiFXXXXcCXXXXXXXXXXXX-199138789.png) no-repeat center center;
+}
+.pop-up-box .pop-body {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.pop-tc .content{
+	height:420px;
+	padding:20px;
+}
+.pop-tc .content .news{
+	margin-bottom:30px;
+}
+.pop-tc .content .news .title{
+	margin-bottom:15px;
+	display:block;
+	font-weight:bold;
+	font-size:15px;
+}
+.pop-tc .content .news .info{
+	display:block;
+	font-size:14px;	
+}
